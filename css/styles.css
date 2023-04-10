@@ -50,7 +50,7 @@ body {
 }
 .contenedor .sidebar{
     grid-column:3/4;
-    background: #e63946;
+    background: #f4908a;
     text-align: center;
     display: flex;
     align-items: center;
