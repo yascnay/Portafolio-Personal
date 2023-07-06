@@ -9,6 +9,12 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+ul {
+    padding-left: 1rem;
+    list-style-type: none;
+    font-size: smaller;
+  }
+
 .contenedor {
     width: 90%;
     max-width: 1000px;
@@ -41,24 +47,71 @@ body {
     background: #1d3557;
     color: #f1faee;
     grid-area: header;
+    text-align: center;
    
 }
 
 .contenedor .contenido {
     grid-area: contenido;
-    height: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.contenedor .contenido p
+{
+    text-align: justify;
+    margin: 10px 10px 40px 10px;
+}
+.contenedor .contenido .data { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch; 
+    
+}
+.contenedor .contenido .data .card{
+    background-color: antiquewhite;
+    width: 100%;
+    text-align: center;
+    margin: 2px;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,.6);
+}
+
+
+
+.contenedor .contenido .data .card img
+{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display:block;
+    text-align: center;
+    margin: 20px;
+}
+
+
+
 .contenedor .sidebar{
     grid-column:3/4;
     background: #f4908a;
-    text-align: center;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
     min-height: 100px;
     grid-area: sidebar;
-    height: 400px;
+    align-items: center;
 }
+
+.contenedor .sidebar .h2,
+                     .skills
+     {
+     padding: 10px;
+     align-items: center;
+    }
 
 .contenedor .sidebar .photo img{
     width: 100px;
@@ -68,11 +121,11 @@ body {
     border-radius: 50%;
     display:block;
     text-align: center;
+    margin: 20px;
 }
 
-.contenedor .widget-1,
-.contenedor .widget-2,
-.contenedor .widget-3 {
+.contenedor .widget
+ {
     background: #45789d;
     color: #f1faee;
     height: 50 px;
@@ -80,6 +133,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
+    
 }
 
 .contenedor .widget-1 {
@@ -94,12 +149,35 @@ body {
     grid-area: widget-3;
 }
 
-
-.contenedor .footer{
+/* footer */
+.contenedor footer{
     background: #1d3557;
     color: #f1faee;
     grid-area: footer;
+   
 }
+
+.contenedor-footer{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 0 10px 0;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color: #fff;
+    border-bottom: 3px solid #f4908a;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+
+}
+.content-foo p{
+    color: #f2f2f2;
+}
+
 
 @media screen and (max-width:768px){
    .contenedor{ 
