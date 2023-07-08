@@ -12,10 +12,12 @@ body {
 ul {
     padding-left: 1rem;
     list-style-type: none;
-    font-size: 10px;
     margin: 10px;
   }
 
+a{
+    color: #010535;
+}
 .contenedor {
     width: 90%;
     max-width: 1000px;
@@ -81,14 +83,15 @@ ul {
     box-shadow: 0 0 6px 0 rgba(0,0,0,.6);
 }
 
-
+.contenedor .contenido .data .card ul{
+    font-size: 10px;
+}
 
 .contenedor .contenido .data .card img
 {
     width: 100px;
     height: 100px;
     object-fit: cover;
-    /*border: 1px solid #fff;*/
     border-radius: 5;
     display:block;
     text-align: center;
@@ -125,31 +128,29 @@ ul {
     margin: 20px;
 }
 
-.contenedor .widget
+.contenedor .widget-1,
+.contenedor .widget-2,
+.contenedor .widget-3
  {
-    background: #c6cfcf;
+    background-color: #d6c7bd;
     color: #010535;
     height: 50 px;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
-    
+    flex-direction: column; 
 }
 
 .contenedor .widget-1 {
     grid-area: widget-1;
 }
-
 .contenedor .widget-2 {
     grid-area: widget-2;
 }
-
 .contenedor .widget-3 {
     grid-area: widget-3;
 }
-
 /* footer */
 .contenedor footer{
     background: #74c0c6;
